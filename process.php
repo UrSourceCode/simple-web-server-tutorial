@@ -7,12 +7,22 @@
     <style>
         @keyframes twinkle {
             0%, 100% {
-                background-color: #f4f4f4;
+                background-color: #ffcccc; /* Light Red */
             }
-            50% {
-                background-color: #ffe4e1;
+            20% {
+                background-color: #ccffcc; /* Light Green */
+            }
+            40% {
+                background-color: #ccccff; /* Light Blue */
+            }
+            60% {
+                background-color: #ffffcc; /* Light Yellow */
+            }
+            80% {
+                background-color: #e6ccff; /* Light Purple */
             }
         }
+
 
         @keyframes rotate {
             from {
@@ -31,14 +41,6 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-        }
-
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
         }
 
         h1 {
@@ -60,7 +62,7 @@
             $name = htmlspecialchars($_POST['name']);
             $affiliate = htmlspecialchars($_POST['affiliate']);
             echo "<h1>Hey my name is $name from $affiliate. Nice to meet you!</h1>";
-            echo '<img src="https://media.giphy.com/media/26xBwdIuRJiAIqHwA/giphy.gif" alt="Nice to meet you GIF">';
+            echo '<img src="https://media1.tenor.com/m/gqfkUMw6jOQAAAAd/bilei-cat.gif" alt="Nice to meet you GIF">';
         } else {
             echo "<h1>Invalid request method.</h1>";
         }
